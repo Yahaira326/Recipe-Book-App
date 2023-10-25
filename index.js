@@ -29,6 +29,7 @@ function displayRecipes(recipes) {
     recipeItemEl.appendChild(recipeIngredientsEl);
     recipeItemEl.appendChild(recipeLinkEl);
     recipeListEl.appendChild(recipeItemEl);
+
   });
 }
 
@@ -40,6 +41,7 @@ async function getRecipes() {
   const data = await response.json();
 
   return data.recipes;
+  
 }
 
 async function init() {
